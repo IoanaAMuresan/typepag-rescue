@@ -92,7 +92,7 @@ export default async function handler(req, res) {
         }
         
         // Rate limiting
-        await new Promise(resolve => setTimeout(resolve, 500));
+        await new Promise(resolve => setTimeout(resolve, 2000));
         
       } catch (error) {
         console.error(`Failed to process ${url}:`, error);
