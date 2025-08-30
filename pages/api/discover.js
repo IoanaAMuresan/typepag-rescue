@@ -44,7 +44,7 @@ export default async function handler(req, res) {
         urls.forEach(url => allUrls.add(url));
         
         // Small delay to respect rate limits
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 5000));
       } catch (error) {
         console.error(`Search failed for query: ${query}`, error);
       }
